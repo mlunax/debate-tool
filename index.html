@@ -33,12 +33,14 @@
             <div class="six columns">
                 <label for="time">Czas wypowiedzi? </label>
                 <input class="u-full-width" type="text" placeholder="Czas wypowiedz" id="time"
-                    onkeydown="if (event.keyCode === 13) document.getElementById('blockTime').focus()">
+                    onkeydown="if (event.keyCode === 13) document.getElementById('blockTime').focus()"
+                    onchange="peopleConfigList(event)">
             </div>
             <div class="six columns">
                 <label for="blockTime">Czas chroniony od?</label>
                 <input class="u-full-width" type="text" placeholder="Czas chroniony" id="blockTime"
-                    onkeydown="if (event.keyCode === 13) document.getElementById('name-1').focus()">
+                    onkeydown="if (event.keyCode === 13) document.getElementById('name-1').focus()"
+                    onchange="peopleConfigList(event)">
             </div>
         </div>
         <div id="peopleNameConfig">
